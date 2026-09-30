@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- Decorações de fundo (Mini Pizzas nos Cantos) -->
+    <ImageView
+        android:id="@+id/decorTopLeft"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="-40dp"
+        android:layout_marginTop="-30dp"
+        android:alpha="0.1"
+        android:rotation="-20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/minipizza" />
+
+    <ImageView
+        android:id="@+id/decorTopLeft2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="636dp"
+        android:alpha="0.1"
+        android:rotation="-20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/minipizza" />
+
+    <ImageView
+        android:id="@+id/decorTopLeft5"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="572dp"
+        android:alpha="0.1"
+        android:rotation="-20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/minipizza" />
+
+    <ImageView
+        android:id="@+id/decorTopLeft3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="320dp"
+        android:alpha="0.1"
+        android:rotation="-20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/minipizza" />
+
+    <ImageView
+        android:id="@+id/decorTopLeft4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="240dp"
+        android:alpha="0.1"
+        android:rotation="-20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/minipizza" />
+
+    <ImageView
+        android:id="@+id/decorTopRight"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="-30dp"
+        android:layout_marginTop="40dp"
+        android:alpha="0.08"
+        android:rotation="15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/minipizza" />
+
+    <!-- Logo Centralizada e Bem Grande -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="60dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/chatgpt_image_30_de_set__de_2026__16_33_00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Nome da Pizzaria (Preto impactante) -->
+    <TextView
+        android:id="@+id/txtPizzariaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Pizzaria do Zé"
+        android:textColor="#000000"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+    <!-- Slogan/Descrição (Cinza Escuro) -->
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Pizzas artesanais, feitas com ingredientes selecionados e muito sabor!"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:lineSpacingExtra="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPizzariaName" />
+
+    <!-- Botão Ver Cardápio (Laranja Vibrante) -->
+    <Button
+        android:id="@+id/btnVerCardapio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FF9800"
+        android:paddingHorizontal="48dp"
+        android:paddingVertical="14dp"
+        android:text="Ver Cardápio"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="30dp"
+        app:icon="@android:drawable/ic_menu_view"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
+
+    <!-- Imagem de Pizza no rodapé (Como na referência) -->
+
+    <!-- Decoração extra no canto inferior (Sobe a pizza) -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
